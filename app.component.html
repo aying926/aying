@@ -1,0 +1,7 @@
+<app-page-header [hidden]="isYSTLogin"></app-page-header>
+<mat-sidenav-container class="sidenav-container" [style.padding]="isYSTLogin ? 0 : ''">
+  <div class="root-router-outlet">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
+<app-page-footer [hidden]="isYSTLogin"></app-page-footer>
